@@ -1,0 +1,98 @@
+/* Configurações globais*/
+
+/*border-box nao ultrapassa o valor definido em width/height*/
+* {
+    box-sizing: border-box;
+}
+
+/*seletor de classe*/
+.card{
+    width: 550px;
+    height: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 50px;
+}
+
+/*seletor de ID*/
+#nome{
+  
+    color: rgb(21, 78, 14);
+    margin-bottom: 10px;
+}
+
+/*seletor de tag pra estilizar os paragrafos*/
+
+p{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+/*cascata: duas regras pra msm classe, a cor cinza vai aparecer*/
+.cargo{color: blue}
+.cargo{color: #555;}
+
+/*especificidade */
+
+div.descricao p{ color: rgb(22, 86, 22);} /*seletor mais especifico (tag+classe+tag*/
+.descricao p{color: #333}
+
+/*estiliza apenas <p> dentro de .bio */
+.descricao p {
+    font-style: italic;
+    margin-top: 15px; 
+}
+
+/*display: coloca as habilidades lado a lado */
+.habilidades {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.habilidades span {
+    padding: 8px 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #3498db;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 0.9rem; /* Unidade de medida */
+}
+
+.bto-link{
+  color: #333;           
+  font-family: Arial, sans-serif;
+  line-height: 2;      
+}
+
+.container-lateral {
+  display: flex;       /* Coloca a imagem e o texto lado a lado */
+  align-items: center;   /* Alinha os dois verticalmente no centro */
+  gap: 20px;            /* Cria um espaço entre a imagem e o texto */
+  padding: 20px;
+}
+
+.imagem-perfil {
+  width: 150px;          /* Define a largura da imagem */
+  height: 150px;         /* Define a altura */
+  border-radius: 70%;    /* Deixa a imagem redonda */
+  object-fit: cover;     /* Garante que a foto não fique esticada */
+}
+
+body {
+  /* 1. Transforma o corpo da página em um container flexível */
+  display: flex; 
+  
+  /* 2. Centraliza horizontalmente */
+  justify-content: center; 
+  
+  /* 3. Centraliza verticalmente */
+  align-items: center; 
+  
+  /* 4. Define que o corpo tem a altura total da tela do navegador */
+  min-height: 100vh; 
+  
+  /* Remove margens padrão que podem atrapalhar o alinhamento */
+  margin: 0; 
+}
