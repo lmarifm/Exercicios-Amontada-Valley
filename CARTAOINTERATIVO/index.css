@@ -9,8 +9,9 @@
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
+  /* card como referência para a logo */
   position: relative; 
-
+  transition: transform 0.3s;
 }
 
 .card-interativo:hover {
@@ -28,17 +29,16 @@
 }
 
 
-.selo {
-  position: absolute; /* Posiciona relativo ao card */
-
-  width: 0.20px;
-  padding: 5px;
-  top: -10px;
-  right: -10px;
-  background-color: var(--cor-principal);
-  color: white;
-
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: bold;
+.selo-imagem {
+  
+  position: absolute; 
+  top: -15px;         
+  right: -15px;      
+  
+  width: 110px;          
+  height: 110px;         
+  
+  /* 3. Estilo Extra (Opcional, mas recomendado) */
+  object-fit: contain;  /* Garante que a imagem não fique esticada ou cortada */
+  z-index: 10;          /* Garante que o selo fique "em cima" do card se eles se sobreporem */
 }
