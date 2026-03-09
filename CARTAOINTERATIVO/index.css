@@ -1,0 +1,44 @@
+/* variavel */
+:root {
+  --cor-principal: #e67e22; 
+}
+
+.card-interativo {
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative; 
+
+}
+
+.card-interativo:hover {
+  transform: scale(1.03);
+
+}
+
+.card-interativo::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: var(--cor-principal); 
+  margin-bottom: 15px;
+}
+
+
+.selo {
+  position: absolute; /* Posiciona relativo ao card */
+
+  width: 0.20px;
+  padding: 5px;
+  top: -10px;
+  right: -10px;
+  background-color: var(--cor-principal);
+  color: white;
+
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
