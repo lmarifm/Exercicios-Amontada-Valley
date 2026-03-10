@@ -1,6 +1,6 @@
 /* variavel */
 :root {
-  --cor-principal: #e67e22; 
+  --cor-principal: #e63f22; 
 }
 
 .card-interativo {
@@ -22,8 +22,8 @@
 .card-interativo::before {
   content: "";
   display: block;
-  width: 50px;
-  height: 4px;
+  width: 70px;
+  height: 6px;
   background-color: var(--cor-principal); 
   margin-bottom: 15px;
 }
@@ -38,7 +38,5 @@
   width: 110px;          
   height: 110px;         
   
-  /* 3. Estilo Extra (Opcional, mas recomendado) */
-  object-fit: contain;  /* Garante que a imagem não fique esticada ou cortada */
-  z-index: 10;          /* Garante que o selo fique "em cima" do card se eles se sobreporem */
+
 }
