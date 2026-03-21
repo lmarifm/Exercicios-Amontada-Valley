@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.card-turismo{
+  width: auto;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.card-turismo img{
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+}
+
+body{
+  background-color: #F5F4F0;
+}
+
+#page{
+  box-sizing: border-box;
+  width: 800px;
+  padding: 24px;
+  background-color: antiquewhite;
+  border-radius: 24px;
+  margin: 48px auto 28px;
+}
+
+.card-turismo main{
+  padding: 24px;
+}
+
+section + section{
+  margin-top: 24px;
+}
+
+p + p {
+  margin-top: 12px;
+}
+
+h1{
+  color: #291B1A;
+  line-height: 120%;
+  font-size: 60px;
+  margin-bottom: 4px;
+}
+
