@@ -1,32 +1,37 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .card-turismo{
-  width: auto;
-  margin: 20px auto;
-  padding: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-turismo img{
-  margin: 20px auto;
+  margin: 20px auto 20px;
+  padding: 10px;
   max-width: 100%;
   height: auto;
   display: block;
   border-radius: 30px;
+
 }
 
 body{
+  font-family:Georgia, 'Times New Roman', Times, serif;
   background-color: #F5F4F0;
+  color: #291B1A;
 }
 
 #page{
-  box-sizing: border-box;
   width: 800px;
   padding: 24px;
-  background-color: antiquewhite;
-  border-radius: 24px;
+  background-color: rgb(239, 237, 234);
+  border-radius: 5px;
   margin: 48px auto 28px;
 }
 
@@ -38,14 +43,27 @@ section + section{
   margin-top: 24px;
 }
 
-p + p {
-  margin-top: 12px;
+p{
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 15px 0;
 }
 
 h1{
   color: #291B1A;
-  line-height: 120%;
-  font-size: 60px;
-  margin-bottom: 4px;
+  line-height: 1.1;
+  font-size: 55px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+h4{
+  color: #E1624F;
+}
+
+footer{
+  color: #7d514e;
+  text-align: center;
+  padding-bottom: 48px;
 }
 
